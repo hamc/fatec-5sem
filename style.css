@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    height: 100vh;
+    /* Altura total da janela */
+    margin: 0;
+    /* Remove margens padrão */
+}
+
+h1 {
+    color: white;
+}
