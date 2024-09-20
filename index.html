@@ -6,8 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Hello World</title>
+    <style>
+        body {
+            background-color: blue; /* Fundo azul */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura total da janela */
+            margin: 0; /* Remove margens padrão */
+        }
+        h1 {
+            color: black; /* Fonte preta */
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formulario{
+            border: solid 1px blue;
+            height: 5em;
+            color: blue;
+            background-color: rgb(255, 255, 255);
+            transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+
+        }
+        .formulario:hover{
+            background-color: blue;
+            color: white;
+            transform: scale(1.2)
+        }
+
+
+
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="main">
+
+        <h1>Hello World</h1>
+    
+        <button class="formulario">
+            <a href="pagina-formulario.html">Formulário</a>
+        </button>
+    </div>
 </body>
 </html>
