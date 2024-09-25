@@ -18,3 +18,4 @@ jobs:
           else
             echo "Test failed: 'Hello World' not found in index.html"
             exit 1
+          fi
