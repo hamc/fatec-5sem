@@ -1,0 +1,21 @@
+name: GLP
+
+on: [pull_request]
+
+jobs:
+  check-hello-world:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository code
+      - uses: actions/checkout@v3
+
+      # Run a test to check if index.html contains "Hello World"
+      - name: Check for "GPL" LICENSE
+        run: |
+          if grep -q "GLP" LICENSE; then
+            echo "Test passed: 'GLP' found in LICENSE"
+          else
+            echo "Test failed: 'GLP' not found in LICENSE"
+            exit 1
+          fi
