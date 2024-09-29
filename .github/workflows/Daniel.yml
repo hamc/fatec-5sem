@@ -10,8 +10,18 @@ jobs:
       # Checkout the repository code
       - uses: actions/checkout@v3
 
+      # Check if LICENSE file exists
+      - name: Check for LICENSE file
+        run: |
+          if [ -f LICENSE ]; then
+            echo "LICENSE file found."
+          else
+            echo "Test failed: LICENSE file not found."
+            exit 1
+          fi
+
       # Run a test to check if LICENSE contains "GLP"
-      - name: Check for "GLP" LICENSE
+      - name: Check for "GLP" in LICENSE
         run: |
           if grep -q "GLP" LICENSE; then
             echo "Test passed: 'GLP' found in LICENSE"
