@@ -1,4 +1,4 @@
-name: GLP
+name: GPL
 
 on: [pull_request]
 
@@ -21,11 +21,11 @@ jobs:
           fi
 
       # Run a test to check if LICENSE contains "GLP"
-      - name: Check for "GLP" in LICENSE
+      - name: Check for "GPL" in LICENSE
         run: |
-          if grep -q "GLP" LICENSE; then
-            echo "Test passed: 'GLP' found in LICENSE"
+          if grep -q "GPL" LICENSE; then
+            echo "Test passed: 'GPL' found in LICENSE"
           else
-            echo "Test failed: 'GLP' not found in LICENSE"
+            echo "Test failed: 'GPL' not found in LICENSE"
             exit 1
           fi
