@@ -13,7 +13,7 @@ jobs:
       - name: Check for inline CSS in HTML
         run: |
           # Busca por <style> ou atributos style em arquivos .html
-          if grep -r -E "<style>|style=" ./**/*.html; then
+          if grep -r -E "<style>|style=" *.html; then
             echo "Inline CSS detected in HTML files. Please remove it.";
             exit 1;
           else
