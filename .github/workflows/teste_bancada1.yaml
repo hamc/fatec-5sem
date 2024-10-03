@@ -1,9 +1,6 @@
 name: Check CSS in HTML
 
-on:
-  pull_request:
-    branches:
-      - testando_css_Bancada1
+on: [pull_request]
 
 jobs:
   check-css:
