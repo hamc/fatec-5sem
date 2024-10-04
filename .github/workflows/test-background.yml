@@ -11,11 +11,11 @@ jobs:
       - uses: actions/checkout@v3
 
       # Run a test to check if index.html contains "Hello World"
-      - name: Check for "Hello World" in index.html
+      - name: Check for "Hello World" in style.css
         run: |
-          if grep -q "background" index.html; then
-            echo "Test passed: 'background' found in index.html"
+          if grep -q "background" style.css; then
+            echo "Test passed: 'background' found in style.css"
           else
-            echo "Test failed: 'background' not found in index.html"
+            echo "Test failed: 'background' not found in style.css"
             exit 1
           fi
